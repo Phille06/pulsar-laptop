@@ -1,5 +1,5 @@
-name("Sandbox RP Farmework Laptop")
-description("Sandbox RP FrameworkLaptop")
+name("Pulsar Framework Laptop")
+description("Pulsar FrameworkLaptop")
 author("[Alzar, Dr Nick]")
 version("v1.0.0")
 lua54("yes")
