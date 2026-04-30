@@ -1,7 +1,7 @@
 _tabletProp = nil
 
 exports('Open', function()
-	exports.ox_inventory:CloseAll()
+	exports.ox_inventory:closeInventory()
 	exports['pulsar-animations']:EmotesForceCancel()
 	exports['pulsar-hud']:InteractionHide()
 	LocalPlayer.state.laptopOpen = true
