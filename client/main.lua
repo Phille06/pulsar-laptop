@@ -48,7 +48,7 @@ AddEventHandler("Characters:Client:Updated", function()
 
 	if
 		LocalPlayer.state.laptopOpen
-		and not (exports.ox_inventory:Search('count', 'laptop') == 0)
+		and (exports.ox_inventory:Search('count', 'laptop') == 0)
 	then
 		exports['pulsar-laptop']:Close(true)
 	end
