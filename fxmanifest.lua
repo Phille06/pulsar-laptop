@@ -1,7 +1,7 @@
 name("Pulsar Framework Laptop")
 description("Pulsar FrameworkLaptop")
 author("[Alzar, Dr Nick]")
-version("v1.0.0")
+version("v1.0.3")
 lua54("yes")
 fx_version("cerulean")
 game("gta5")
@@ -11,19 +11,19 @@ client_script("@pulsar-pwnzor/client/check.lua")
 ui_page("ui/dist/index.html")
 
 files({
-	"ui/dist/*.*",
+  "ui/dist/*.*",
 })
 
 client_scripts({
-	"client/*.lua",
-	"client/apps/**/*.lua",
+  "client/*.lua",
+  "client/apps/**/*.lua",
 })
 shared_scripts({
-	"config.lua",
+  "config.lua",
 })
 
 server_scripts({
-	"@oxmysql/lib/MySQL.lua",
-	"server/*.lua",
-	"server/apps/**/*.lua",
+  "@oxmysql/lib/MySQL.lua",
+  "server/*.lua",
+  "server/apps/**/*.lua",
 })
