@@ -91,7 +91,7 @@ AddEventHandler("Laptop:Server:RegisterCallbacks", function()
 
 			local items = {}
 			if not data.phone then
-				local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, 'vpn', 1)
+				local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 'vpn', 1)
 				for k, it in ipairs(marketItems) do
 					local v = table.copy(it)
 					if
@@ -160,7 +160,7 @@ AddEventHandler("Laptop:Server:RegisterCallbacks", function()
 				if not failed then
 					local quantityLimited = false
 					local otherLimited = false
-					local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, 'vpn', 1)
+					local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 'vpn', 1)
 
 					local boughtItems = {}
 					local boughtItemQuantity = 0

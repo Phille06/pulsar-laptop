@@ -718,7 +718,7 @@ AddEventHandler("Laptop:Server:LSUnderground:Boosting:ActionRequest", function(s
                         local char = exports['pulsar-characters']:FetchCharacterSource(v.Source)
                         if char then
                             local profiles = char:GetData("Profiles")
-                            local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 1, 'vpn', 1)
+                            local hasVpn = exports.ox_inventory:ItemsHas(char:GetData("SID"), 'vpn', 1)
                             local isLSU = hasValue(char:GetData("States") or {}, "ACCESS_LSUNDERGROUND")
                             local hasDongle = hasValue(char:GetData("States") or {}, "RACE_DONGLE")
 
